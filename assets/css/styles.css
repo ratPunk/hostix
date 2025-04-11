@@ -104,7 +104,7 @@ body {
 /* Герой-секция с затемненным фоном */
 .hero {
     position: relative;
-    background-image: url("cloud-storage-banner-background.jpg");
+    background-image: url("../image/cloud-storage-banner-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 150px 0 80px;
