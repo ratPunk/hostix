@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevHost — Доступные мощности для разработчиков</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preload" href="cloud-storage-banner-background.jpg" type="image/jpg">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     <!-- Шапка сайта -->
@@ -46,19 +44,13 @@
                 <!-- Карточка 1 -->
                 <div class="pricing-card">
                     <h3>Стартовый</h3>
-                    <div class="price">$5<span>/час</span></div>
+                    <div class="price">$5<span>/месяц</span></div>
                     <ul class="features">
-<<<<<<< HEAD
                         <li>2 CPU Ядра 2.2 ГГЦ</li>
                         <li>4 ГБ RAM</li>
-                        <li>30 ГБ жёсткого диска</li>
+                        <li>30 ГБ жесткого диска</li>
                         <li>60 CP</li>
                         <li>∞ БД</li>
-=======
-                        <li>4 ядра CPU</li>
-                        <li>4 ГБ RAM</li>
-                        <li>26 ГБ Жёсткий диск</li>
->>>>>>> 638a7919091320648a62a71cd55f642ac9bdff40
                         <li>100 Мбит/с</li>
                     </ul>
                     <a href="#" class="btn-order">Заказать</a>
@@ -67,11 +59,11 @@
                 <div class="pricing-card popular">
                     <div class="popular-badge">Выбор разработчиков</div>
                     <h3>Оптимальный</h3>
-                    <div class="price">$25<span>/час</span></div>
+                    <div class="price">$25<span>/месяц</span></div>
                     <ul class="features">
                         <li>4 CPU Ядра 2.2 ГГЦ</li>
                         <li>6 ГБ RAM</li>
-                        <li>60 ГБ жёсткого диска</li>
+                        <li>60 ГБ жесткого диска</li>
                         <li>60 CP</li>
                         <li>∞ БД</li>
                         <li>100 Мбит/с</li>
@@ -81,11 +73,11 @@
                 <!-- Карточка 3 -->
                 <div class="pricing-card ">
                     <h3>Профессиональный</h3>
-                    <div class="price">$25<span>/час</span></div>
+                    <div class="price">$25<span>/месяц</span></div>
                     <ul class="features">
-                        <li>8 CPU Ядра 2.2 ГГЦ</li>
-                        <li>16 ГБ RAM</li>
-                        <li>80 ГБ жёсткого диска</li>
+                        <li>6 CPU Ядра 2.2 ГГЦ</li>
+                        <li>10 ГБ RAM</li>
+                        <li>80 ГБ жесткого диска</li>
                         <li>60 CP</li>
                         <li>∞ БД</li>
                         <li>100 Мбит/с</li>
@@ -104,12 +96,12 @@
                 <!-- CPU -->
                 <div class="config-option">
                     <label for="cpu-slider">CPU: <span id="cpu-value">4 ядра</span></label>
-                    <input type="range" id="cpu-slider" min="2" max="8" step="2" value="4">
+                    <input type="range" id="cpu-slider" min="2" max="6" step="2" value="4">
                     <div class="slider-labels">
                         <span>2 ядра</span>
                         <span>4 ядра</span>
                         <span>6 ядер</span>
-                        <span>8 ядер</span>
+
                     </div>
                 </div>
                 <!-- RAM -->
@@ -125,27 +117,34 @@
                 </div>
                 <!-- Диск -->
                 <div class="config-option">
-                    <label for="disk-slider">Диск: <span id="disk-value">100 ГБ NVMe</span></label>
-                    <input type="range" id="disk-slider" min="1" max="3" step="1" value="2">
+                    <label for="disk-slider">Диск: <span id="disk-value">40 ГБ жесткого диска</span></label>
+                    <input type="range" id="disk-slider" min="1" max="9" step="1" value="2">
                     <div class="slider-labels">
-                        <span>50 ГБ SSD</span>
-                        <span>100 ГБ NVMe</span>
-                        <span>200 ГБ NVMe</span>
+                        <span>40 ГБ </span>
+                        <span>60 ГБ </span>
+                        <span>80 ГБ </span>
+                        <span>100 ГБ </span>
+                        <span>120 ГБ </span>
+                        <span>140 ГБ </span>
+                        <span>160 ГБ </span>
+                        <span>180 ГБ </span>
+                        <span>200 ГБ </span>
                     </div>
                 </div>
                 <!-- Сеть -->
                 <div class="config-option">
-                    <label for="network-slider">Сеть: <span id="network-value">1 Гбит/с</span></label>
+                    <label for="network-slider">Сеть: <span id="network-value">100 Мбит/с</span></label>
                     <input type="range" id="network-slider" min="1" max="3" step="1" value="2">
                     <div class="slider-labels">
+                        <span>50 Мбит/с</span>
                         <span>100 Мбит/с</span>
-                        <span>1 Гбит/с</span>
-                        <span>2.5 Гбит/с</span>
+                        <span>150 Мбит/с</span>
+
                     </div>
                 </div>
-                <!-- Итогоо -->
+                <!-- Итого -->
                 <div class="config-total">
-                    <span>Итого: <strong id="total-price">$18/час</strong></span>
+                    <span>Итого: <strong id="total-price">$18/месяц</strong></span>
                     <a href="#" class="btn-order">Развернуть сервер</a>
                 </div>
             </div>
@@ -208,7 +207,7 @@
                         <p>“Отличный сервис! Перенесли мой сайт без простоев, поддержка отвечает быстро.”</p>
                     </div>
                     <div class="testimonial-author">
-                        <i class="bi bi-person-circle"></i>
+                        <img src="https://via.placeholder.com/50" alt="Фото клиента">
                         <div class="author-info">
                             <h4>Иван Петров</h4>
                             <span>Frontend-разработчик</span>
@@ -221,7 +220,7 @@
                         <p>“Недорогие тарифы и гибкая настройка. Идеально для стартапов!”</p>
                     </div>
                     <div class="testimonial-author">
-                        <i class="bi bi-person-circle"></i>
+                        <img src="https://via.placeholder.com/50" alt="Фото клиента">
                         <div class="author-info">
                             <h4>Анна Смирнова</h4>
                             <span>Владелец интернет-магазина</span>
@@ -234,7 +233,7 @@
                         <p>“Лучшее соотношение цены и качества. DDoS-защита работает на ура.”</p>
                     </div>
                     <div class="testimonial-author">
-                        <i class="bi bi-person-circle"></i>
+                        <img src="https://via.placeholder.com/50" alt="Фото клиента">
                         <div class="author-info">
                             <h4>Дмитрий Козлов</h4>
                             <span>DevOps-инженер</span>
@@ -248,7 +247,7 @@
     <!-- Футер -->
     <footer class="footer">
         <div class="container">
-            <p>© 2025 DevHost. Дешево и надежно для разработчиков.</p>
+            <p>© 2024 DevHost. Дешево и надежно для разработчиков.</p>
         </div>
     </footer>
 
