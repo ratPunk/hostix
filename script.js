@@ -37,7 +37,7 @@ document.getElementById('network-slider').addEventListener('input', function() {
     updateTotalPrice();
 });
 
-// Расчет итоговой цены
+// Расчет итоговой ценыыы
 function updateTotalPrice() {
     const cpuPrice = parseInt(document.getElementById('cpu-slider').value) * 2.5;
     const ramPrice = parseInt(document.getElementById('ram-slider').value) * 0.75;
