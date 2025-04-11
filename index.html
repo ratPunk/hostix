@@ -44,11 +44,11 @@
                 <!-- Карточка 1 -->
                 <div class="pricing-card">
                     <h3>Стартовый</h3>
-                    <div class="price">$5<span>/час</span></div>
+                    <div class="price">$5<span>/месяц</span></div>
                     <ul class="features">
                         <li>2 CPU Ядра 2.2 ГГЦ</li>
                         <li>4 ГБ RAM</li>
-                        <li>30 ГБ жёсткого диска</li>
+                        <li>30 ГБ жесткого диска</li>
                         <li>60 CP</li>
                         <li>∞ БД</li>
                         <li>100 Мбит/с</li>
@@ -59,11 +59,11 @@
                 <div class="pricing-card popular">
                     <div class="popular-badge">Выбор разработчиков</div>
                     <h3>Оптимальный</h3>
-                    <div class="price">$25<span>/час</span></div>
+                    <div class="price">$25<span>/месяц</span></div>
                     <ul class="features">
                         <li>4 CPU Ядра 2.2 ГГЦ</li>
                         <li>6 ГБ RAM</li>
-                        <li>60 ГБ жёсткого диска</li>
+                        <li>60 ГБ жесткого диска</li>
                         <li>60 CP</li>
                         <li>∞ БД</li>
                         <li>100 Мбит/с</li>
@@ -73,11 +73,11 @@
                 <!-- Карточка 3 -->
                 <div class="pricing-card ">
                     <h3>Профессиональный</h3>
-                    <div class="price">$25<span>/час</span></div>
+                    <div class="price">$25<span>/месяц</span></div>
                     <ul class="features">
-                        <li>8 CPU Ядра 2.2 ГГЦ</li>
+                        <li>6 CPU Ядра 2.2 ГГЦ</li>
                         <li>10 ГБ RAM</li>
-                        <li>80 ГБ жёсткого диска</li>
+                        <li>80 ГБ жесткого диска</li>
                         <li>60 CP</li>
                         <li>∞ БД</li>
                         <li>100 Мбит/с</li>
@@ -96,12 +96,12 @@
                 <!-- CPU -->
                 <div class="config-option">
                     <label for="cpu-slider">CPU: <span id="cpu-value">4 ядра</span></label>
-                    <input type="range" id="cpu-slider" min="2" max="8" step="2" value="4">
+                    <input type="range" id="cpu-slider" min="2" max="6" step="2" value="4">
                     <div class="slider-labels">
                         <span>2 ядра</span>
                         <span>4 ядра</span>
                         <span>6 ядер</span>
-                        <span>8 ядер</span>
+
                     </div>
                 </div>
                 <!-- RAM -->
@@ -117,27 +117,34 @@
                 </div>
                 <!-- Диск -->
                 <div class="config-option">
-                    <label for="disk-slider">Диск: <span id="disk-value">100 ГБ NVMe</span></label>
-                    <input type="range" id="disk-slider" min="1" max="3" step="1" value="2">
+                    <label for="disk-slider">Диск: <span id="disk-value">40 ГБ жесткого диска</span></label>
+                    <input type="range" id="disk-slider" min="1" max="9" step="1" value="2">
                     <div class="slider-labels">
-                        <span>50 ГБ SSD</span>
-                        <span>100 ГБ NVMe</span>
-                        <span>200 ГБ NVMe</span>
+                        <span>40 ГБ </span>
+                        <span>60 ГБ </span>
+                        <span>80 ГБ </span>
+                        <span>100 ГБ </span>
+                        <span>120 ГБ </span>
+                        <span>140 ГБ </span>
+                        <span>160 ГБ </span>
+                        <span>180 ГБ </span>
+                        <span>200 ГБ </span>
                     </div>
                 </div>
                 <!-- Сеть -->
                 <div class="config-option">
-                    <label for="network-slider">Сеть: <span id="network-value">1 Гбит/с</span></label>
+                    <label for="network-slider">Сеть: <span id="network-value">100 Мбит/с</span></label>
                     <input type="range" id="network-slider" min="1" max="3" step="1" value="2">
                     <div class="slider-labels">
+                        <span>50 Мбит/с</span>
                         <span>100 Мбит/с</span>
-                        <span>1 Гбит/с</span>
-                        <span>2.5 Гбит/с</span>
+                        <span>150 Мбит/с</span>
+
                     </div>
                 </div>
                 <!-- Итого -->
                 <div class="config-total">
-                    <span>Итого: <strong id="total-price">$18/час</strong></span>
+                    <span>Итого: <strong id="total-price">$18/месяц</strong></span>
                     <a href="#" class="btn-order">Развернуть сервер</a>
                 </div>
             </div>
