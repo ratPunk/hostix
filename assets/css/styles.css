@@ -101,10 +101,10 @@ body {
     font-weight: 600;
 }
 
-/* Герой-секция с затемненным фоном */
+/* Герой-секция с затемненным фsdadasdоном */
 .hero {
     position: relative;
-    background-image: url("../image/cloud-storage-banner-background.jpg");
+    background-image: url("../image/cloud-storage-banner-background.jpg"); 
     background-repeat: no-repeat;
     background-size: cover;
     padding: 150px 0 80px;
