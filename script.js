@@ -36,12 +36,12 @@ document.getElementById('network-slider').addEventListener('input', function() {
 
 // Расчет итоговой ценыыы
 function updateTotalPrice() {
-    const cpuPrice = parseInt(document.getElementById('cpu-slider').value) * 2.5;
-    const ramPrice = parseInt(document.getElementById('ram-slider').value) * 0.75;
-    const diskPrice = parseInt(document.getElementById('disk-slider').value) * 5;
-    const networkPrice = parseInt(document.getElementById('network-slider').value) * 3;
+    const cpuPrice = parseInt(document.getElementById('cpu-slider').value) * 25;
+    const ramPrice = parseInt(document.getElementById('ram-slider').value) * 10;
+    const diskPrice = parseInt(document.getElementById('disk-slider').value) * 50;
+    const networkPrice = parseInt(document.getElementById('network-slider').value) * 30;
     
     const total = cpuPrice + ramPrice + diskPrice + networkPrice;
-    document.getElementById('total-price').textContent = `$${total}/час`;
+    document.getElementById('total-price').textContent = `${total}₽/час`;
 }
 
