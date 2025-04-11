@@ -33,3 +33,5 @@ function updateTotalPrice() {
     const total = cpuPrice + ramPrice + diskPrice + networkPrice;
     document.getElementById('total-price').textContent = `$${total}/час`;
 }
+
+// яя
