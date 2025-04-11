@@ -13,15 +13,12 @@ document.getElementById('ram-slider').addEventListener('input', function() {
 
 document.getElementById('disk-slider').addEventListener('input', function() {
     const diskOptions = [
-        '40 ГБ',  
-        '60 ГБ',
+        '15 ГБ',  
+        '35 ГБ',
+        '50 ГБ',  
         '80 ГБ',  
         '100 ГБ',  
-        '120 ГБ',  
-        '140 ГБ',  
-        '160 ГБ',  
-        '180 ГБ', 
-        '200 ГБ'
+
     ];
     document.getElementById('disk-value').textContent = diskOptions[this.value - 1];
     updateTotalPrice();
@@ -30,8 +27,8 @@ document.getElementById('disk-slider').addEventListener('input', function() {
 document.getElementById('network-slider').addEventListener('input', function() {
     const networkOptions = [
             '50 Мбит/с',
-             '100 Мбит/с',
-             '150 Мбит/с'
+            '100 Мбит/с',
+            '150 Мбит/с'
         ];
     document.getElementById('network-value').textContent = networkOptions[this.value - 1];
     updateTotalPrice();
