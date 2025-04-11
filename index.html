@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevHost — Доступные мощности для разработчиков</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <span class="logo-text">DevHost</span>
+                    <span class="logo-slogan">Малые мощности — большие возможности</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Ресурсы</a></li>
+                    <li><a href="#">Помощь</a></li>
+                    <li><a href="#" class="btn-login">Войти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главный баннер -->
+    <section class="hero">
+        <div class="container">
+            <h1>Доступные серверы <span class="highlight">для разработчиков</span></h1>
+            <p class="subtitle">Специализируемся на малых и средних мощностях по низким ценам. Идеально для хостинга сайтов, тестовых сред и небольших проектов.</p>
+            <a href="#" class="btn-cta">Выбрать сервер</a>
+        </div>
+    </section>
+
+    <!-- Секция с тарифами серверов -->
+    <section class="server-plans">
+        <div class="container">
+            <h2>Выберите мощность</h2>
+            <div class="pricing-cards">
+                <!-- Карточка 1 -->
+                <div class="pricing-card">
+                    <h3>Стартовый</h3>
+                    <div class="price">$5<span>/час</span></div>
+                    <ul class="features">
+                        <li>2 ядра CPU</li>
+                        <li>4 ГБ RAM</li>
+                        <li>50 ГБ SSD</li>
+                        <li>100 Мбит/с</li>
+                    </ul>
+                    <a href="#" class="btn-order">Заказать</a>
+                </div>
+                <!-- Карточка 2 (Популярный) -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Выбор разработчиков</div>
+                    <h3>Оптимальный</h3>
+                    <div class="price">$12<span>/час</span></div>
+                    <ul class="features">
+                        <li>4 ядра CPU</li>
+                        <li>8 ГБ RAM</li>
+                        <li>100 ГБ NVMe</li>
+                        <li>1 Гбит/с</li>
+                    </ul>
+                    <a href="#" class="btn-order">Заказать</a>
+                </div>
+                <!-- Карточка 3 -->
+                <div class="pricing-card">
+                    <h3>Профессиональный</h3>
+                    <div class="price">$25<span>/час</span></div>
+                    <ul class="features">
+                        <li>8 ядер CPU</li>
+                        <li>16 ГБ RAM</li>
+                        <li>200 ГБ NVMe</li>
+                        <li>2.5 Гбит/с</li>
+                    </ul>
+                    <a href="#" class="btn-order">Заказать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Конфигуратор сервера с ползунками -->
+    <section class="server-configurator">
+        <div class="container">
+            <h2>Настройте свой сервер</h2>
+            <div class="configurator">
+                <!-- CPU -->
+                <div class="config-option">
+                    <label for="cpu-slider">CPU: <span id="cpu-value">4 ядра</span></label>
+                    <input type="range" id="cpu-slider" min="2" max="8" step="2" value="4">
+                    <div class="slider-labels">
+                        <span>2 ядра</span>
+                        <span>4 ядра</span>
+                        <span>6 ядер</span>
+                        <span>8 ядер</span>
+                    </div>
+                </div>
+                <!-- RAM -->
+                <div class="config-option">
+                    <label for="ram-slider">RAM: <span id="ram-value">8 ГБ</span></label>
+                    <input type="range" id="ram-slider" min="4" max="16" step="4" value="8">
+                    <div class="slider-labels">
+                        <span>4 ГБ</span>
+                        <span>8 ГБ</span>
+                        <span>12 ГБ</span>
+                        <span>16 ГБ</span>
+                    </div>
+                </div>
+                <!-- Диск -->
+                <div class="config-option">
+                    <label for="disk-slider">Диск: <span id="disk-value">100 ГБ NVMe</span></label>
+                    <input type="range" id="disk-slider" min="1" max="3" step="1" value="2">
+                    <div class="slider-labels">
+                        <span>50 ГБ SSD</span>
+                        <span>100 ГБ NVMe</span>
+                        <span>200 ГБ NVMe</span>
+                    </div>
+                </div>
+                <!-- Сеть -->
+                <div class="config-option">
+                    <label for="network-slider">Сеть: <span id="network-value">1 Гбит/с</span></label>
+                    <input type="range" id="network-slider" min="1" max="3" step="1" value="2">
+                    <div class="slider-labels">
+                        <span>100 Мбит/с</span>
+                        <span>1 Гбит/с</span>
+                        <span>2.5 Гбит/с</span>
+                    </div>
+                </div>
+                <!-- Итого -->
+                <div class="config-total">
+                    <span>Итого: <strong id="total-price">$18/час</strong></span>
+                    <a href="#" class="btn-order">Развернуть сервер</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Дополнительные услуги -->
+    <section class="extra-services">
+        <div class="container">
+            <h2>Дополнительные услуги</h2>
+            <div class="services-grid">
+                <!-- Услуга 1 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Поддержка сайтов</h3>
+                    <p>Настройка, мониторинг и исправление ошибок на ваших проектах.</p>
+                    <div class="service-footer">
+                        <a href="#" class="btn-service">Узнать больше</a>
+                    </div>
+                </div>
+                <!-- Услуга 2 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-truck"></i></div>
+                    <h3>Перенос на наш хостинг</h3>
+                    <p>Поможем перенести сайт с другого хостинга без простоев.</p>
+                    <div class="service-footer">
+                        <a href="#" class="btn-service">Заказать перенос</a>
+                    </div>
+                </div>
+                <!-- Услуга 3 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Защита от DDoS</h3>
+                    <p>Мощная защита вашего сервера от атак.</p>
+                    <div class="service-footer">
+                        <a href="#" class="btn-service">Подключить</a>
+                    </div>
+                </div>
+                <!-- Услуга 4 -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-database"></i></div>
+                    <h3>Оптимизация БД</h3>
+                    <p>Ускорение работы MySQL/PostgreSQL.</p>
+                    <div class="service-footer">
+                        <a href="#" class="btn-service">Настроить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы клиентов -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Отзывы наших клиентов</h2>
+            <div class="testimonials-grid">
+                <!-- Отзыв 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>“Отличный сервис! Перенесли мой сайт без простоев, поддержка отвечает быстро.”</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/50" alt="Фото клиента">
+                        <div class="author-info">
+                            <h4>Иван Петров</h4>
+                            <span>Frontend-разработчик</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Отзыв 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>“Недорогие тарифы и гибкая настройка. Идеально для стартапов!”</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/50" alt="Фото клиента">
+                        <div class="author-info">
+                            <h4>Анна Смирнова</h4>
+                            <span>Владелец интернет-магазина</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Отзыв 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>“Лучшее соотношение цены и качества. DDoS-защита работает на ура.”</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/50" alt="Фото клиента">
+                        <div class="author-info">
+                            <h4>Дмитрий Козлов</h4>
+                            <span>DevOps-инженер</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 DevHost. Дешево и надежно для разработчиков.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
