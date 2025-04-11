@@ -38,10 +38,27 @@ body {
     justify-content: center;
 }
 
+.logo{
+    text-align: center;
+}
+
+@media (max-width: 522px) {
+    .logo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 .logo-text {
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--primary);
+}
+@media (max-width: 450px) {
+    .logo-text{
+        font-size: 0.9rem;
+    }
 }
 
 .logo-slogan {
@@ -55,6 +72,14 @@ body {
     list-style: none;
     gap: 25px;
     align-items: center;
+}
+@media (max-width: 450px) {
+    .nav-links a{
+        font-size: 0.8rem;
+    }
+    .nav-links{
+        gap: 10px;
+    }
 }
 
 .nav-links a {
@@ -79,7 +104,7 @@ body {
 /* Герой-секция с затемненным фоном */
 .hero {
     position: relative;
-    background-image: url("cloud-storage-banner-background.jpg");
+    background-image: url("../img/cloud-storage-banner-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 150px 0 80px;
@@ -320,7 +345,7 @@ i {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     .services-grid{
         gap: 80px;
     }
