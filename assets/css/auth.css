@@ -1,0 +1,230 @@
+/* Base Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #0f0e17;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Auth Section */
+.auth-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Auth Form */
+.auth-form {
+    background: #1a1a2e;
+    border-radius: 10px;
+    padding: 30px;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.auth-header h2 {
+    font-size: 1.8rem;
+    color: #6c5ce7;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.auth-header p {
+    color: #a29bfe;
+    font-size: 0.9rem;
+}
+
+/* Form Elements */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #f5f6fa;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #0f0e17;
+    border: 1px solid #6c5ce7;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #a29bfe;
+}
+
+/* Buttons */
+.auth-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.auth-btn:hover {
+    background-color: #7c6cf7;
+}
+
+/* Form Options */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+/* Checkbox Styles */
+.remember-me,
+.form-group.terms label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 0;
+    font-weight: normal;
+    user-select: none;
+}
+
+/* Hide default checkbox */
+.remember-me input[type="checkbox"],
+.form-group.terms input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Custom checkbox */
+.custom-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    background-color: #0f0e17;
+    border: 2px solid #6c5ce7;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+/* Checkmark (hidden by default) */
+.custom-checkbox::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Show checkmark when checked */
+.remember-me input:checked ~ .custom-checkbox::after,
+.form-group.terms input:checked ~ .custom-checkbox::after {
+    display: block;
+}
+
+/* Checkbox hover and checked states */
+.remember-me:hover .custom-checkbox,
+.form-group.terms label:hover .custom-checkbox {
+    border-color: #a29bfe;
+}
+
+.remember-me input:checked ~ .custom-checkbox,
+.form-group.terms input:checked ~ .custom-checkbox {
+    background-color: #6c5ce7;
+}
+
+/* Text alignment */
+.remember-me span,
+.form-group.terms label span {
+    line-height: 1.4;
+}
+
+/* Links */
+.forgot-password,
+.auth-footer a,
+.form-group.terms a {
+    color: #6c5ce7;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.forgot-password:hover,
+.auth-footer a:hover,
+.form-group.terms a:hover {
+    color: #a29bfe;
+    text-decoration: underline;
+}
+
+/* Footer */
+.auth-footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #a29bfe;
+    font-size: 0.9rem;
+}
+
+/* Hidden state */
+.hidden {
+    display: none !important;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .auth-form {
+        padding: 25px 15px;
+    }
+    
+    .auth-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .form-options {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .forgot-password {
+        margin-top: 10px;
+    }
+}
