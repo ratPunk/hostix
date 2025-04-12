@@ -6,6 +6,7 @@ html, body {
     background-color: #0f0e17;
     color: white;
     font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
 }
 
 /* Auth Section */
