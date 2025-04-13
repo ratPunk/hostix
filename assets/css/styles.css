@@ -454,14 +454,21 @@ i {
 
 /* Секция отзывов */
 .testimonials {
-    padding: 80px 0;
+    padding: 100px 0;
     background-color: #1a1a2e;
 }
 
 .testimonials h2 {
     text-align: center;
-    font-size: 2.2rem;
-    margin-bottom: 50px;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--secondary);
+    margin-bottom: 60px;
 }
 
 .testimonials-grid {
@@ -472,30 +479,65 @@ i {
 
 .testimonial-card {
     background: linear-gradient(145deg, #1a1a2e, #16213e);
-    border-radius: 10px;
-    padding: 25px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    position: relative;
+    border: 1px solid rgba(108, 92, 231, 0.2);
+}
+
+.testimonial-content {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.testimonial-rating {
+    color: #FFD700 !important;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+i.fas.fa-star, i.fa-star-half-alt  {
+    font-size: 1rem;
+    color: var(--secondary);
 }
 
 .testimonial-content p {
     font-style: italic;
-    margin-bottom: 20px;
+    line-height: 1.7;
     position: relative;
+    padding-left: 20px;
 }
 
-.testimonial-content p::before,
-.testimonial-content p::after {
+.testimonial-content p::before {
     content: '"';
-    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    font-size: 3rem;
     color: var(--primary);
+    opacity: 0.3;
+    font-family: serif;
 }
 
 .testimonial-author {
     margin-top: auto;
-    bottom: 0;
     display: flex;
     align-items: center;
     gap: 15px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(108, 92, 231, 0.2);
+}
+
+.author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--primary);
 }
 
 .author-info h4 {
@@ -504,6 +546,34 @@ i {
 }
 
 .author-info span {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: var(--text-gray);
+    display: block;
+}
+
+.featured-badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background-color: var(--primary);
+    color: var(--dark);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+    .testimonials {
+        padding: 60px 0;
+    }
+    
+    .testimonials h2 {
+        font-size: 2rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+        margin-bottom: 40px;
+    }
 }
